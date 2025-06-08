@@ -19,12 +19,12 @@ Cada patrón está explicado con:
 ## 🧩 Patrones incluidos (progresivamente)
 
 ### 🔨 Creacionales
-- [Builder](./creationales/builder/README.md)
-- [Factory Method](./src/creational/factory-method/README.md)
-- [Abstract Factory](./src/creational/abstract-factory/README.md)
-- [Prototype](./src/creational/prototype/README.md)
-- [Singleton](./src/creational/singleton/README.md)
-- [Factory Function](./src/creational/factory-function/README.md)
+- [Builder](./creacionales/builder/README.md)
+- [Factory Method](./src/creacionales/factory-method/README.md)
+- [Abstract Factory](./src/creacionales/abstract-factory/README.md)
+- [Prototype](./src/creacionales/prototype/README.md)
+- [Singleton](./src/creacionales/singleton/README.md)
+- [Factory Function](./src/creacionales/factory-function/README.md)
 
 ### 🧱 Estructurales
 - [Adapter](./src/structural/adapter/README.md)
