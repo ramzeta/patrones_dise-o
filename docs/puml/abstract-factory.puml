@@ -1,0 +1,19 @@
+@startuml
+    interface UIFactory {
+        +createButton(): Button
+    }
+    interface Button {
+        +render()
+    }
+    class LightButton
+    class DarkButton
+    class LightUIFactory
+    class DarkUIFactory
+
+    Button <|.. LightButton
+    Button <|.. DarkButton
+    UIFactory <|.. LightUIFactory
+    UIFactory <|.. DarkUIFactory
+    LightUIFactory --> LightButton
+    DarkUIFactory --> DarkButton
+    @enduml

@@ -1,0 +1,15 @@
+@startuml
+    abstract class Handler {
+        -next: Handler
+        +setNext(handler): Handler
+        +handle(request)
+    }
+
+    class AuthHandler
+    class LogHandler
+
+    Handler <|-- AuthHandler
+    Handler <|-- LogHandler
+    AuthHandler --> Handler : next
+    LogHandler --> Handler : next
+    @enduml

@@ -1,0 +1,14 @@
+@startuml
+    interface Notifier {
+        +send(message)
+    }
+
+    class BasicNotifier
+    class NotifierDecorator
+    class SMSDecorator
+
+    Notifier <|.. BasicNotifier
+    Notifier <|.. NotifierDecorator
+    NotifierDecorator <|-- SMSDecorator
+    NotifierDecorator --> Notifier
+    @enduml

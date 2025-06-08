@@ -1,0 +1,12 @@
+@startuml
+    abstract class Notification {
+        +notifyUser()
+    }
+    class EmailNotification
+    class SMSNotification
+    class NotificationFactory
+
+    Notification <|-- EmailNotification
+    Notification <|-- SMSNotification
+    NotificationFactory --> Notification
+    @enduml

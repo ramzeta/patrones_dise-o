@@ -1,0 +1,12 @@
+@startuml
+    interface Employee {
+        +showDetails()
+    }
+
+    class Developer
+    class Manager
+
+    Employee <|.. Developer
+    Employee <|.. Manager
+    Manager --> Employee : contains
+    @enduml

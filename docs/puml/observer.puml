@@ -1,0 +1,11 @@
+@startuml
+    interface Observer {
+        +update(event)
+    }
+
+    class Logger
+    class EventManager
+
+    Observer <|.. Logger
+    EventManager --> Observer : subscribes
+    @enduml
