@@ -12,5 +12,71 @@ Este patrón se encuentra implementado en contexto de arquitectura Spring Boot.
 ## 🧪 Ejemplo en código
 
 ```java
-// (ya insertado anteriormente, omitido aquí)
+// Producto
+class NaveEspacial {
+    private String tipoMotor;
+    private String armamento;
+    private int capacidadPasajeros;
+
+    public void setTipoMotor(String tipoMotor) {
+        this.tipoMotor = tipoMotor;
+    }
+
+    public void setArmamento(String armamento) {
+        this.armamento = armamento;
+    }
+
+    public void setCapacidadPasajeros(int capacidadPasajeros) {
+        this.capacidadPasajeros = capacidadPasajeros;
+    }
+
+    @Override
+    public String toString() {
+        return "🚀 Nave Espacial [Motor: " + tipoMotor + ", Armamento: " + armamento +
+               ", Pasajeros: " + capacidadPasajeros + "]";
+    }
+}
+
+// Builder
+class NaveBuilder {
+    private NaveEspacial nave;
+
+    public NaveBuilder() {
+        nave = new NaveEspacial();
+    }
+
+    public NaveBuilder motorIonico() {
+        nave.setTipoMotor("Motor Iónico");
+        return this;
+    }
+
+    public NaveBuilder conBlasters() {
+        nave.setArmamento("Blasters Dobles");
+        return this;
+    }
+
+    public NaveBuilder paraDosPasajeros() {
+        nave.setCapacidadPasajeros(2);
+        return this;
+    }
+
+    public NaveEspacial build() {
+        return nave;
+    }
+}
+
+// Cliente
+public class Hangar {
+    public static void main(String[] args) {
+        NaveEspacial xwing = new NaveBuilder()
+                                .motorIonico()
+                                .conBlasters()
+                                .paraDosPasajeros()
+                                .build();
+
+        System.out.println(xwing);
+    }
+}
+
 ```
+Este ejemplo crea una nave X-Wing de manera flexible con pasos encadenados, tal como un Maestro Jedi prepara su sable láser. ⚔️
