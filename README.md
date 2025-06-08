@@ -1,3 +1,5 @@
+![Categorías de Patrones](./docs/categorias-patrones.png)
+
 # Patrones de Diseño en Arquitectura Spring Boot
 
 ## 💡 Lema
@@ -14,80 +16,7 @@ Cada patrón está explicado con:
 
 ---
 
-## 📦 Estructura del proyecto
-
-```
-.
-├── creational/
-│   ├── builder/
-│   ├── factory-method/
-│   └── ...
-├── structural/
-│   ├── adapter/
-│   ├── facade/
-│   └── ...
-├── behavioral/
-│   ├── strategy/
-│   ├── observer/
-│   └── ...
-├── test/
-└── docs/
-```
-
----
-
 ## 🧩 Patrones incluidos (progresivamente)
-
-### 🔨 Creacionales
-- Builder
-- Factory Method
-- Abstract Factory
-- Singleton
-- Prototype
-
-### 🧱 Estructurales
-- Adapter
-- Decorator
-- Composite
-- Facade
-
-### 🔁 Comportamiento
-- Strategy
-- Observer
-- Chain of Responsibility
-- Command
-
----
-
-## 🧰 Requisitos
-- Java 17+
-- Maven 3.9+
-- Spring Boot 3.x
-- IDE: IntelliJ o VSCode con soporte Java
-
----
-
-## 🧑‍💻 Cómo ejecutar los ejemplos
-
-```bash
-# Compilar y testear
-mvn clean install
-```
-
-Cada carpeta contiene su clase principal, sus pruebas y README específico.
-
----
-
-## 🚀 Autores y créditos
-
-Este repositorio ha sido creado como recurso de referencia para desarrolladores backend que buscan aplicar **patrones de diseño de forma profesional** con Spring.
-
-**Autor**: Rami  
-**Perfil**: Full Stack Expert - Java Spring Boot | Angular | MREN  
-
-
-
-## 📚 Índice de patrones
 
 ### 🔨 Creacionales
 - [Builder](./creational/builder/README.md)
@@ -111,31 +40,8 @@ Este repositorio ha sido creado como recurso de referencia para desarrolladores 
 - [Template Method](./behavioral/template-method/README.md)
 - [State](./behavioral/state/README.md)
 
+---
+
 ## 🧭 Aplicabilidad de Patrones de Diseño
 
-| Patrón                   | Backend (Spring Boot) | Frontend (Angular, etc.) | Comentario breve |
-|--------------------------|------------------------|----------------------------|------------------|
-| **Builder**              | ✅ Muy común           | 🔸 Opcional                | Construcción paso a paso de objetos complejos |
-| **Factory / Abstract**   | ✅ Muy útil            | 🔸 A veces útil            | Creación dinámica de objetos / servicios |
-| **Singleton**            | ✅ (Spring beans)      | 🔸 Servicios globales      | Instancia única por contexto |
-| **Prototype**            | ✅ Poco común          | 🔸 Rara vez                | Clonar objetos configurados |
-| **Factory Function**     | ✅ Sí                  | ✅ Componentes dinámicos   | Generación flexible en tiempo de ejecución |
-| **Adapter**              | ✅ Muy común           | 🔸 A veces                 | Adaptar interfaces incompatibles |
-| **Bridge**               | ✅ En capas             | 🔸 Poco frecuente          | Separar abstracción de implementación |
-| **Composite**            | ✅ Árboles, validaciones | ✅ Componentes anidados  | Estructuras jerárquicas reutilizables |
-| **Decorator**            | ✅ Muy útil            | ✅ Decoradores Angular     | Añadir funcionalidad sin alterar el original |
-| **Facade**               | ✅ Agrupar servicios   | ✅ Simplificar lógica      | Ocultar complejidad tras una interfaz clara |
-| **Proxy**                | ✅ Seguridad, logging  | 🔸 Poco común              | Interceptar operaciones |
-| **Flyweight**            | 🔸 Raro pero válido    | 🔸 Raro                    | Optimización de uso de objetos |
-| **Chain of Responsibility** | ✅ Validaciones     | 🔸 Flujo de eventos        | Procesamiento en cascada |
-| **Command**              | ✅ CQRS, eventos       | 🔸 Acciones encapsuladas  | Encapsular comportamiento como objeto |
-| **Strategy**             | ✅ Muy común           | ✅ UI dinámica             | Algoritmos intercambiables |
-| **Observer**             | ✅ Eventos Spring      | ✅ RxJS, Forms             | Notificación de cambios |
-| **State**                | ✅ Máquinas de estados | ✅ Store, UI               | Cambios de comportamiento por estado |
-| **Template Method**      | ✅ Clases base         | 🔸 Poca necesidad directa  | Definir estructura y permitir extensiones |
-| **Visitor**              | 🔸 Procesadores        | 🔸 Muy raro                | Ejecutar lógica sobre estructuras distintas |
-| **Mediator**             | 🔸 Coordinador de servicios | ✅ Servicios compartidos | Comunicar sin acoplamiento directo |
-
-**Leyenda**:
-- ✅ Muy utilizado
-- 🔸 Aplicable pero menos frecuente
+(esta sección se completará con tabla y ejemplos en versiones posteriores)
