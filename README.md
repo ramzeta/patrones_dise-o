@@ -20,25 +20,25 @@ Cada patrón está explicado con:
 
 ### 🔨 Creacionales
 - [Builder](./creacionales/builder/README.md)
-- [Factory Method](./src/creacionales/factory-method/README.md)
-- [Abstract Factory](./src/creacionales/abstract-factory/README.md)
-- [Prototype](./src/creacionales/prototype/README.md)
-- [Singleton](./src/creacionales/singleton/README.md)
-- [Factory Function](./src/creacionales/factory-function/README.md)
+- [Factory Method](./creacionales/factory-method/README.md)
+- [Abstract Factory](./creacionales/abstract-factory/README.md)
+- [Prototype](./creacionales/prototype/README.md)
+- [Singleton](./creacionales/singleton/README.md)
+- [Factory Function](./creacionales/factory-function/README.md)
 
 ### 🧱 Estructurales
-- [Adapter](./src/structural/adapter/README.md)
-- [Facade](./src/structural/facade/README.md)
-- [Decorator](./src/structural/decorator/README.md)
-- [Composite](./src/structural/composite/README.md)
+- [Adapter](./estructurales/adapter/README.md)
+- [Facade](./estructurales/facade/README.md)
+- [Decorator](./estructurales/decorator/README.md)
+- [Composite](./estructurales/composite/README.md)
 
 ### 🔁 Comportamiento
-- [Strategy](./src/comportamiento/strategy/README.md)
-- [Command](./src/comportamiento/command/README.md)
-- [Observer](./src/comportamiento/observer/README.md)
-- [Chain of Responsibility](./src/comportamiento/chain-of-responsibility/README.md)
-- [Template Method](./src/comportamiento/template-method/README.md)
-- [State](./src/comportamiento/state/README.md)
+- [Strategy](./comportamiento/strategy/README.md)
+- [Command](./comportamiento/command/README.md)
+- [Observer](./comportamiento/observer/README.md)
+- [Chain of Responsibility](./comportamiento/chain-of-responsibility/README.md)
+- [Template Method](./comportamiento/template-method/README.md)
+- [State](./comportamiento/state/README.md)
 
 ---
 
